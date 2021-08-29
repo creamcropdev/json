@@ -1,0 +1,32 @@
+{
+  "name": "@creamcropdev/json",
+  "version": "1.0.0",
+  "description": "A JSON 1.1 feed parser.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint src/**",
+    "format": "prettier --write .",
+    "checkformat": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creamcropdev/json.git"
+  },
+  "author": "Quantalabs (@QLabs)",
+  "license": "GPL-3.0 ",
+  "bugs": {
+    "url": "https://github.com/creamcropdev/json/issues"
+  },
+  "homepage": "https://github.com/creamcropdev/json#readme",
+  "keywords": [
+    "json",
+    "feed",
+    "parser"
+  ],
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "mocha": "^9.1.1",
+    "prettier": "2.3.2"
+  }
+}

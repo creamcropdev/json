@@ -1,0 +1,41 @@
+name: I found a bug
+description: "There's a problem. Fill this out."
+title: "[Bug]: "
+labels: [bug]
+assignees:
+  - Quantalabs
+body:
+  - type: markdown
+    attributes:
+      value: Please make sure you fill out everything below.
+  - type: textarea
+    attributes:
+      render: shell
+      label: "Describe the error"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      render: shell
+      label: "How is your `@creamcropdev/json` configured. Include how you installed, and how you run `@creamcropdev/json`"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      description: Check which values are true for you environment
+      options:
+        - label: OS - Windows
+        - label: OS - MacOS
+        - label: OS - Linux
+        - label: OS - Windows - Windows Subsystem for Linux
+  - type: input
+    attributes:
+      label: NodeJS
+      description: Your NodeJS version
+      placeholder: "Node v14"
+  - type: textarea
+    attributes:
+      render: shell
+      label: Step-by-step reproduction instructions
+    validations:
+      required: true

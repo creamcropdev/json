@@ -1,0 +1,8 @@
+.github/
+node_modules/
+.eslintrc.js
+.gitignore
+package.json
+package-lock.json
+README.md
+SECURITY.md

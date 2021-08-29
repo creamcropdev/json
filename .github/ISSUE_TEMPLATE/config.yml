@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Looking for creamcrop?
+    url: https://github.com/creamcropdev/creamcrop
+    about: This is the `@creamcropdev/json` package, which is used in the official creamcrop package.
+  - name: Feature?
+    url: https://github.com/creamcropdev/json/discussions
+    about: Submit a discussion! We'll get back to you ASAP! 
