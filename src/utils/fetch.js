@@ -1,9 +1,7 @@
 async function fetch(url) {
   return new Promise((res, rej) => {
     /* istanbul ignore next */
-    let client = url.startsWith("https")
-      ? require("https") 
-      : require("http");
+    let client = url.startsWith("https") ? require("https") : require("http");
 
     client
       .get(url, (resp) => {
