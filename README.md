@@ -5,6 +5,8 @@
 # JSON
 The JSON feed parser for the creamcrop package.
 
+[![codecov](https://codecov.io/gh/creamcropdev/json/branch/main/graph/badge.svg?token=KFJWW7TWFY)](https://codecov.io/gh/creamcropdev/json)
+
 ## Installation
 
 Installation is avaliable through `npm`, `yarn`, or `pnpm`:

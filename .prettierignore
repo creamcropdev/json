@@ -6,3 +6,5 @@ package.json
 package-lock.json
 README.md
 SECURITY.md
+coverage
+.nyc_output

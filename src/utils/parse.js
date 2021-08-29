@@ -1,6 +1,7 @@
 const fetch = require("./fetch");
 
 async function parse(fetch_url) {
+  /* istanbul ignore next */
   function findMetadata(x) {
     return {
       name: Object.prototype.hasOwnProperty.call(x, "name") ? x.name : "",
@@ -11,6 +12,7 @@ async function parse(fetch_url) {
 
   let data = JSON.parse(await fetch(fetch_url));
 
+  /* istanbul ignore next */
   let authors = Object.prototype.hasOwnProperty.call(data, "authors")
     ? data.authors.map((x) => findMetadata(x))
     : [];
@@ -72,11 +74,12 @@ async function parse(fetch_url) {
         )
           ? x.date_published
           : "",
+        /* istanbul ignore next */
         date_modified: Object.prototype.hasOwnProperty.call(x, "date_modified")
           ? x.date_modified
           : "",
         authors: Object.prototype.hasOwnProperty.call(x, "authors")
-          ? x.authors.map((y) => findMetadata(y))
+          ? x.authors.map(/* istanbul ignore next */ (y) => findMetadata(y))
           : [],
         tags: Object.prototype.hasOwnProperty.call(x, "tags") ? x.tags : [],
         language: Object.prototype.hasOwnProperty.call(x, "language")
@@ -108,6 +111,7 @@ async function parse(fetch_url) {
       };
 
       // Validate
+      /* istanbul ignore next */
       if (
         data.content_text === "Not Present" &&
         data.content_html === "Not Present"

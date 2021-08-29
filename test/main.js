@@ -98,4 +98,14 @@ describe("#parse()", function () {
       }
     })();
   });
+
+  it("should fail on false urls", function () {
+    (async () => {
+      try {
+        await src.parse("https://shouldfailhere");
+      } catch (e) {
+        console.log(e);
+      }
+    })();
+  });
 });
