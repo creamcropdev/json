@@ -21,9 +21,16 @@ jobs:
     - name: Linting
       run: |
         npm run lint
-    - name: Run Tests
-      run: |
-        npm test
     - name: Check formatting
       run: |
         npm run checkformat
+    - name: Run Tests
+      run: |
+        npm test
+    - name: Generate Coverage Reports
+      run: | 
+        npm run coverage-report
+    - name: Codecov
+      uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
