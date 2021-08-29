@@ -123,6 +123,8 @@ async function parse(fetch_url) {
     }),
   };
 
+  returnval.itemlength = returnval.items.length;
+
   return returnval;
 }
 

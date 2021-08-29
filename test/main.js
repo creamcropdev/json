@@ -98,14 +98,19 @@ describe("#parse()", function () {
       }
     })();
   });
-
   it("should fail on false urls", function () {
     (async () => {
       try {
         await src.parse("https://shouldfailhere");
       } catch (e) {
-        console.log(e);
+        console.log("Failed on false url! Success!");
       }
+    })();
+  });
+  it("should have a .itemlength value", function () {
+    (async () => {
+      let nprorg = await src.parse("https://feeds.npr.org/1019/feed.json");
+      assert.equal(typeof nprorg.itemlength, "number");
     })();
   });
 });
