@@ -1,4 +1,4 @@
-* Version
-    * [latest (1.0.0)](/json/latest/ ':ignore :target=_self')
-    * [1.0.0](/json/1.0.0/ ':ignore :target=_self')
-* [Creamcrop](https://creamcrop.js.org ':ignore :target=_self')
+- Version
+  - [latest (1.0.0)](/json/latest/ ":ignore :target=_self")
+  - [1.0.0](/json/1.0.0/ ":ignore :target=_self")
+- [Creamcrop](https://creamcrop.js.org ":ignore :target=_self")
